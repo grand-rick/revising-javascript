@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ychkin Javascript</title>
+</head>
+<body>
+    <p id="fuck"></p>
+    <script>
+     
+// var company = new Object();
+// company.name = "Facebook";
+// company.ceo = new Object();
+// company.ceo.firstName = "Mark";
+// company.ceo.secondName = "Zuckerberg";
+// company.ceo.favColor = "blue";
+// console.log(company);
+// console.log(`Company CEO name is: ${company.ceo.firstName}`);
+
+
+// var company = {
+//     name: "Facebook",
+//     ceo: {
+//         favColor: "blue",
+//         firstName: "Mark",
+//         secondName: "Zuckerberg",
+//         netWorth: "Very Rich",
+//     },
+//     "stock of company": 100
+// };
+
+// console.log(company);
+
+// function multiply(x, y) {
+//     return x * y;
+// }
+
+//     // Function factory
+// function makeMultiplier(multiplier) {
+//     var myFunc = function(x) {
+//         return multiplier * x;
+//     };
+//     return myFunc;
+// };
+
+// var multiplyBy3 = makeMultiplier(3);
+// var multiplyBy7 = makeMultiplier(7);
+
+//     console.log(multiplyBy7(10));
+//     console.log(multiplyBy3(9));
+
+// var doubleAll = makeMultiplier(2);
+// console.log(doubleAll(23));
+
+
+// // Passing functions as arguments
+// function doOperationOn(x, operation) {
+//     return operation(x);
+// };
+
+// var result = doOperationOn(31, doubleAll)
+// var result1 = doOperationOn(101, multiplyBy7)
+
+// console.log(result);
+// console.log(result1);
+
+
+(function() {
+    var a, b, c;
+    const name = prompt("What is your name?");
+    if(name == "Rick") {
+        var q1 = confirm(`Please confirm if your name is ${name}?`);
+        if(q1 == true) {
+            alert(`Welcome Back ${name}!`)
+        } else {
+            alert("Okay, Have a good day");
+        }
+    }  else {
+        a = void(b = 7, c = 9)
+            alert(`Sorry Your name is ${a}`)
+        }
+})();
+
+
+
+    </script>
+</body>
+</html>

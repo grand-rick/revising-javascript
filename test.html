@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    
+    <script>
+    const first = document.getElementById("demo");
+    const second = document.getElementById("demo1");
+    const third = document.getElementById("demo2");
+    const fourth = document.getElementById("demo3");
+    const fifth = document.getElementById("demo4");
+
+    first.innerHTML= "Hello, Welcome to the App";
+    passDelay = setTimeout(pass, 1000);
+    function pass() {
+        password = prompt("Please Create A Password");
+        alert("Your password has been created, thank you");
+        var passTry = prompt("Please Enter Your Password");
+        while(passTry!=password){
+            passTry=prompt("Wrong Password please try again");
+        }
+        if(passTry==password){
+            alert("Yay! You are in, Welcome Back");
+        }
+    }
+
+    
+
+    
+    </script>
+</body>
+</html>

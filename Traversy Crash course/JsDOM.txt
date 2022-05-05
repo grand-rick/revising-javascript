@@ -1,0 +1,9 @@
+Traversing the DOM
+1.Parents
+->Use .parentElement(although .parentNode has the same effect);
+2.Children
+->Use .children, .firstElementChild, .lastElementChild
+3.Siblings
+->Use .nextElementSibling and .previousElementSibling
+4.Create Elements
+-->Use .createElement('');

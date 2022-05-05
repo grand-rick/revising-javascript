@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Statements</title>
+</head>
+<body>
+    <script>
+        document.write("Hello, welcome to my hotel!");
+
+onload = setTimeout(serve, 2000);
+
+function serve() {
+    var beverage = prompt("Would you like coffee or tea?"); 
+
+    if(beverage == "coffee") {
+        var q2 = prompt(`Great! Would you like some cookies along with your ${beverage}?`);
+        if(q2 == "yes") {
+            alert("You have ordered coffee and cookies, thank you for your order.");
+        } else if(q2 != "yes") {
+            alert("You have ordered coffee only, thank you for your order.");
+        }
+
+    } else if(beverage == "tea") {
+        var q4 = prompt(`Great! Would you like some biscuits along with your ${beverage}?`);
+        if(q4 == "yes") {
+            alert("You have ordered tea with your biscuits, thank you for your order.");
+        } else if(q4 != "yes") {
+            alert("You have ordered tea only, thank you for your order.");
+        }
+
+    } else {
+        document.write("Okay, have a good day");
+    }
+}
+    </script>
+</body>
+</html>
