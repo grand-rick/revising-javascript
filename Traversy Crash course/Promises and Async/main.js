@@ -33,15 +33,16 @@
 
     // const data = fetch('https://pokeapi.co/api/v2/pokemon/ditto');
 //Async/ Await
-const fetchData = async () => {
-    try {
-        const data = await fetch('https://pokeapi.co/api/v2/pokemon/ditto');
-        const res = await data.json();
-        console.log(res);
-    } catch(err) {
-        console.error(err);
-    }
-    
-}
+document.addEventListener("DOMContentLoaded", pokemon);
+        async function pokemon() {
+            try {
+                const res = await fetch('https://pokeapi.co/api/v2/pokemon/ditto/abilities');
+                const data = await res.json();
+                console.log(data);
+            }
+            catch(err) {
+                console.log(err);
+            }
+        }
 
-fetchData();
+// fetchData();

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <form action="" method="post">
+
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script>
+        const user = {
+            name: "",
+            username: "",
+            phoneNumber: "",
+            email: "",
+            password: ""
+        }
+
+        // Function constructor
+        function User(name, username, email, password) {
+            this.name = name;
+            this.username = username;
+            this.email = email;
+            this.password = password;
+        }
+
+        // Assigning prototype
+        User.prototype.getSummary = function() {
+            return `My name is ${this.name} A.K.A ${this.username} and my email is ${this.email}.`;
+        }
+
+        // Instantiate Object
+        const user1 = new User("Patrick", "Rick", "kabugap02@gmail.com", "mypassword");
+        const user2 = new User("James", "Jamo", "awssh@gmail.com", "mypasswordtoo");
+
+        const createdUser = {
+            ...user,
+            ...user1
+        };
+
+        console.log(createdUser);
+    </script>
+</body>
+</html>
